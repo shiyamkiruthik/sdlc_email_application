@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Email application</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="info-page" id="info-page">
+			<div class="login-page" id="login-page">
+				<div id="logo-container">
+					<img
+						class="logo"
+						id="logo"
+						src="./assets/01_pigeon_dribble.gif"
+						alt="mail"
+					/>
+				</div>
+				<div id="login-box">
+					<div class="login-info" id="login-info">
+						<div>
+							<input
+								class="username"
+								id="username"
+								type="text"
+								placeholder="  username"
+								autocomplete="off"
+							/>
+						</div>
+						<div>
+							<input
+								class="password"
+								id="password"
+								type="password"
+								placeholder="  password"
+							/>
+						</div>
+						<button class="login-button" id="login-button">Login</button>
+						<p class="signup-button" id="signup-button">
+							Don't have an account?<button class="signup" id="signup">
+								sign-up
+							</button>
+						</p>
+					</div>
+				</div>
+				<div class="signup-page" id="signup-page">
+					<div>
+						<input
+							class="new-user"
+							id="new-user"
+							type="email"
+							placeholder="   username"
+							autocomplete="off"
+							required
+						/>
+					</div>
+					<div>
+						<input
+							class="new-password"
+							id="new-password"
+							type="password"
+							placeholder="  new password"
+						/>
+					</div>
+					<div>
+						<input
+							class="confirm-password"
+							id="confirm-password"
+							type="password"
+							placeholder="   confirm password"
+						/>
+					</div>
+					<div class="feedback" id="feedback"></div>
+					<button class="signup-submit" id="signup-submit">Submit</button>
+				</div>
+			</div>
+		</div>
+		<div class="mail-page" id="mail-page">
+			<div class="mail-page-header" id="mail-page-header">
+				<div class="container" onclick="myFunction(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<p class="username-display" id="username-display">Email id</p>
+				<button class="logout-button" id="logout-button">Log out</button>
+			</div>
+
+			<div class="mail-contents" id="mail-contents">
+				<div class="menu-tab" id="menu-tab">
+					<div>
+						<button class="compose-mail" id="compose-mail">Compose Mail</button>
+					</div>
+					<div class="menu-buttons" id="menu-buttons">
+						<button class="inbox" id="inbox">Inbox</button>
+						<button class="sent" id="sent">Sent</button>
+						<button class="trash" id="trash">Trash</button>
+					</div>
+				</div>
+				<div class="mail-column" id="mail-column">
+					<div class="mail-list-header">
+						<div class="mail-header" id="mail-header">Inbox Mails</div>
+						<div class="refresh" id="refresh">
+							<img
+								class="refresh-icon"
+								src="./assets/refresh.png"
+								alt="refresh"
+							/>
+						</div>
+					</div>
+					<div class="mail-list" id="mail-list"></div>
+				</div>
+				<div class="mail-container" id="mail-container">
+					<div class="message-container-header" id="message-container-header">
+						<div class="subject-header" id="subject-header">Subject</div>
+						<button class="delete-button" id="delete-button">
+							<img class="delete-icon" src="./assets/delete.png" alt="delete" />
+						</button>
+					</div>
+					<div class="from-to" id="from-to">
+						<div class="from-mail-id" id="from-mail-id">
+							From : abc@email.com
+						</div>
+						<div class="to-mail-id" id="to-mail-id">To : xyz@email.com</div>
+					</div>
+					<div class="mail-box" id="mail-box">Message</div>
+					<div class="reply" id="reply">
+						<button class="reply-button" id="reply-button">Reply</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="logout-container" id="logout-container">
+			<div class="logout-box" id="logout-box">
+				<p class="logout-text">Do you want to logout?</p>
+				<div class="logout-buttons">
+					<button
+						class="confirm-button"
+						id="yes"
+						onclick="confirmlogout(this.id)"
+					>
+						Yes
+					</button>
+					<button
+						class="confirm-button"
+						id="no"
+						onclick="confirmlogout(this.id)"
+					>
+						No
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="mail-compose" id="mail-compose">
+			<div>
+				<input
+					class="to-address"
+					id="to-address"
+					type="text"
+					placeholder="  To mail id"
+					autocomplete="off"
+				/>
+			</div>
+			<div>
+				<input
+					class="subject-content"
+					id="subject-content"
+					type="text"
+					placeholder="  Subject"
+					autocomplete="off"
+				/>
+			</div>
+			<div>
+				<textarea
+					class="message-in-mail"
+					id="message-in-mail"
+					cols="30"
+					rows="10"
+					placeholder="  Message"
+				></textarea>
+			</div>
+			<div class="send-bar" id="send-bar">
+				<button class="send-button" id="send-button">Send</button>
+			</div>
+		</div>
+	</body>
+	<script src="./scripts/index.js"></script>
+	<script src="./scripts/maildata.js"></script>
+</html>

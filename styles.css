@@ -1,0 +1,362 @@
+.bar1,
+.bar2,
+.bar3 {
+	background-color: #333;
+	height: 4px;
+	margin: 6px 0;
+	transition: 0.4s;
+	width: 35px;
+}
+
+.change .bar1 {
+	transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	transform: translate(0, -11px) rotate(45deg);
+}
+.compose-mail {
+	background-color: mediumblue;
+	border: white;
+	border-radius: 1.5em;
+	color: white;
+	height: 3.3em;
+	font-size: 0.9em;
+	margin: 3em 0em;
+	width: 12em;
+}
+.container {
+	cursor: pointer;
+	display: inline-block;
+}
+.confirm-button {
+	background-color: mediumblue;
+	border-radius: 1em;
+	border: mediumblue;
+	color: white;
+	margin-right: 2em;
+	height: 2em;
+	width: 4em;
+}
+.date {
+	font-size: 0.8em;
+	width: 20%;
+}
+.delete-button {
+	background-color: white;
+	border: mediumblue;
+	border-radius: 1em;
+	color: white;
+	margin-right: 2em;
+	height: 2em;
+	width: 4em;
+}
+.delete-icon {
+	height: 1.8em;
+	width: 1.8em;
+}
+.from-id {
+	color: rgb(0, 0, 205);
+	font-size: 1.5em;
+	padding: 0.5em;
+}
+.from-mail-id {
+	font-size: 1em;
+}
+.from-to {
+	padding: 1em;
+}
+.hamburger-menu {
+	display: inline-block;
+	position: absolute;
+	left: -1;
+}
+.inbox {
+	background-color: rgb(5 100 135);
+	border: white;
+	border-radius: 0em 1em 1em 0em;
+	color: white;
+	font-size: 1em;
+	height: 2em;
+	width: 11em;
+}
+.info-page {
+	background-color: rgb(75, 187, 227);
+	display: block;
+	height: 773px;
+}
+.login-button {
+	background-color: mediumblue;
+	border: mediumblue;
+	border-radius: 1em;
+	color: white;
+	height: 2em;
+	width: 4.5em;
+}
+.login-info {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2em;
+}
+.login-page {
+	align-items: center;
+	display: flex;
+	gap: 6em;
+	height: 773px;
+	justify-content: center;
+}
+.logo {
+	height: 25em;
+	padding-right: 5em;
+	width: 30em;
+}
+.logout-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+.logout-button {
+	height: 2em;
+	width: 4.5em;
+	border-radius: 1em;
+	background-color: mediumblue;
+	color: white;
+	border: mediumblue;
+	display: flex;
+	justify-content: center;
+	gap: 4em;
+}
+.logout-container {
+	display: none;
+	z-index: 11;
+	position: absolute;
+	top: 36%;
+	left: 40%;
+	box-shadow: 0px 0px 3px 3px;
+	width: 20em;
+	height: 7em;
+	background-color: rgb(75, 187, 227);
+}
+.mail-box {
+	padding: 1em;
+	font-size: 1em;
+	height: 400px;
+}
+.mail-column {
+	width: 27%;
+	border-width: 1px 0px 0px 1px;
+	border-style: solid;
+	overflow-y: auto;
+}
+.mail-compose {
+	display: none;
+	z-index: 11;
+	position: absolute;
+	top: 32%;
+	left: 52%;
+	width: 47%;
+	height: 483px;
+	box-shadow: 0px 0px 3px 3px;
+}
+.mail-container {
+	display: flex;
+	flex-direction: column;
+	width: 73%;
+	border: 1px black solid;
+	transition: 0.5s;
+}
+.mail-contents {
+	display: flex;
+	height: 662px;
+}
+.mail-header {
+	height: 1em;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 1em;
+	color: mediumblue;
+}
+.mail-info {
+	display: flex;
+	flex-direction: column;
+	border-width: 1px 0px 0px;
+	border-style: solid;
+}
+.mail-list {
+	display: flex;
+	flex-direction: column;
+	border-width: 0px 0px 1px;
+	border-style: solid;
+}
+.mail-list-header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.mail-page {
+	display: none;
+	height: 702px;
+}
+.mail-page-header {
+	display: flex;
+	background-color: rgb(75, 187, 227);
+	justify-content: space-between;
+	padding: 0em 2em;
+	align-items: center;
+}
+.menu-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.menu-tab {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 0%;
+	transition: 0.5s;
+	overflow: hidden;
+	border-width: 0.5px 0px 0.5px 0.5px;
+	border-style: solid;
+}
+.menu-tab-button {
+	border-width: 0px;
+}
+.message {
+	width: 80%;
+	font-size: 0.9em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.message-container-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.message-in-mail {
+	margin: 1em;
+	width: 51em;
+	height: 21em;
+	border-radius: 1em;
+	word-wrap: break-word;
+}
+.message-time {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0em 0.7em 0.4em;
+}
+.no-of-mail {
+	margin: 0px;
+}
+.password {
+	width: 14em;
+	border-radius: 1em;
+	height: 1.8em;
+	border: cyan;
+}
+.refresh-icon {
+	width: 1.5em;
+	height: 1.5em;
+}
+.reply {
+	padding-left: 3em;
+}
+.reply-button {
+	height: 2em;
+	width: 4.5em;
+	border-radius: 1em;
+	background-color: mediumblue;
+	color: white;
+	border: mediumblue;
+}
+.send-button {
+	margin-left: 4em;
+	height: 2em;
+	width: 4.5em;
+	border-radius: 1em;
+	background-color: mediumblue;
+	color: white;
+	border: mediumblue;
+}
+.sent {
+	border-radius: 0em 1em 1em 0em;
+	border: white;
+	color: rgb(0 0 0);
+	height: 2em;
+	background-color: rgb(171 227 247);
+	font-size: 1em;
+}
+.signup {
+	height: 2em;
+	width: 4.5em;
+	border-radius: 1em;
+	background-color: mediumblue;
+	color: white;
+	border: mediumblue;
+}
+.signup-page {
+	display: none;
+}
+.subject {
+	width: 80%;
+	font-size: 1.2em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.subject-content {
+	width: 51em;
+	margin: 1em;
+	height: 2em;
+	border-radius: 1em;
+}
+.subject-date {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0em 0.7em 0.2em;
+}
+.subject-header {
+	height: 1em;
+	font-size: 2em;
+	padding: 0.5em;
+}
+.time {
+	width: 20%;
+	font-size: 0.7em;
+}
+.to-address {
+	margin: 1em;
+	width: 26em;
+	height: 2em;
+	border-radius: 1em;
+}
+.to-mail-id {
+	font-size: 0.8em;
+}
+.trash {
+	border-radius: 0em 1em 1em 0em;
+	border: white;
+	color: rgb(0, 0, 0);
+	height: 2em;
+	background-color: rgb(171 227 247);
+	font-size: 1em;
+}
+.username {
+	width: 14em;
+	border-radius: 1em;
+	height: 1.8em;
+	border: cyan;
+}
+.username-display {
+	font-family: fantasy;
+	font-size: larger;
+}
